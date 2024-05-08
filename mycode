@@ -1,0 +1,78 @@
+// let progress = document.querySelector("#progress")
+// progress.style.width = `0%`
+// // console.log(progress)
+// let completedGoal = document.querySelector("#selected-goal")
+// let selectedGoal =0//It is the value of selected goals in progress bar which is updated by selection of goal
+// let checked = document.querySelectorAll(".checkbox")
+// // console.log(checked)
+// let input = document.querySelectorAll(".goal-input")
+// // console.log(input)
+// let error = document.querySelector("#alert-msg")
+// let object = JSON.parse(sessionStorage.getItem('object')) || {}
+// checked.forEach((check)=>{
+//     check.addEventListener("click",(event)=>{
+//         console.log("event is: ",event)
+//         let value = [...input].every((inp)=>{
+//             return inp.value
+//         })
+//         // console.log(value)
+//         if(value){
+//             // let w = progress.style.width
+//             if(check.classList.toggle('selectedCheckbox')){
+//                 // selectedGoal++
+//                 // completedGoal.innerText = `${selectedGoal}/3 completed`
+//                 let inputId = check.nextElementSibling.id
+//                 console.log(inputId)
+//                 object[inputId].completed = !object[inputId].completed
+//                 sessionStorage.setItem("object",JSON.stringify(object))
+//                 if(object[inputId].completed){
+//                     console.log("hello")
+//                     check.classList.add('selectedCheckbox')
+//                     console.log(check)
+//                 }
+//                 input.forEach((inp)=>{
+//                     let ch = inp.parentElement.firstElementChild
+//                     if(ch.classList.contains("selectedCheckbox")){
+//                         inp.classList.add("checked-goal")
+//                     }
+//                 })
+//                 // console.log(check)
+//                 // // console.log(w)
+//                 // progress.style.width =`calc(${w} + 33%)`
+//             }else{
+//                 let inputId = check.nextElementSibling.id
+//                 console.log(inputId)
+//                 object[inputId].completed = !object[inputId].completed
+//                 sessionStorage.setItem("object",JSON.stringify(object))
+//                 // selectedGoal--
+//                 // if(selectedGoal === 0){
+//                 //     // console.log(selectedGoal,"text is not del")
+//                 //     completedGoal.innerText = ""
+//                 // }else{
+//                 //     completedGoal.innerText = `${selectedGoal}/3 completed`
+//                 // }
+//                 // progress.style.width = `calc(${w} - 33%)`
+//                 input.forEach((inp)=>{
+//                     let ch = inp.parentElement.firstElementChild
+//                     if(!ch.classList.contains("selectedCheckbox")){
+//                         inp.classList.remove("checked-goal")
+//                     }
+//                 })
+//             }
+//         }else{
+//             error.style.display  = "block"
+//         }
+//     })
+// })
+// input.forEach((inp)=>{
+//     if(object[inp.id]) inp.value = object[inp.id].name
+//     inp.addEventListener("input",(e)=>{
+//         object[inp.id]={name: inp.value, completed : false} 
+//         sessionStorage.setItem("object",JSON.stringify(object))
+//     })
+// })
+// input.forEach((inp)=>{
+//     inp.addEventListener("click",(e)=>{
+//         error.style.display = "none"
+//     })
+// })

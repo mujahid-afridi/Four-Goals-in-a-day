@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color:#48A30012;
+}
+.tittle{
+    color :green;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 64px;
+    font-weight: 700;
+}
+.tittle span{
+    color: #000000;
+}
+@media screen and (max-width : 768px){
+    .tittle{
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+.container{
+    max-width: 660px;
+    background-color: #FBFBFB;
+    margin-inline: auto;
+    padding : 20px 30px;
+    border-radius: 15px;
+}
+#subTittle{
+    margin-bottom: 15px;
+}
+#subTittle img{
+    vertical-align: middle;
+}
+#first-para{
+    color:#858585;
+    margin-bottom: 10px;
+}
+.progress-container{
+    position: relative;
+}
+.progress-tag{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #48A3001A;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#progress{
+    /* width : 0%; */
+    height: 100%;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: width 0.5s ;
+}
+#selected-goal{
+    color: white;
+    margin-left: 20px;
+    min-width:max-content ;
+}
+#alert-msg{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF5151;
+    position: absolute;
+    top: 42px;
+    display: none;
+}
+.goal{
+    width: 100%;
+    border-radius: 17px;
+    border: 1px solid #0000001A;
+    height: 82px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border: 2px solid #61481C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.selectedCheckbox{
+    background-image: url(check-img.svg);
+    background-size: 24px 24px;
+    border: 2px solid green;
+    background-size: cover; 
+}
+.goal-input{
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.goal-input::placeholder{
+    color: #D9D9D9;
+}
+#second-para{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#las-para{
+    color: #858585;
+    font-weight: 500;
+    text-align: center;
+    font-size: 10px;
+}
+.checked-goal{
+    color: green;
+    text-decoration: line-through;
+}
+/* .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#add-goal{
+    text-align: center;
+    max-width: 150px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+} */
+
